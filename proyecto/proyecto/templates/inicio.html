@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}
+
+{% endblock title %}
+
+{% block content %}
+
+{% include 'includes/header.html' %}
+
+<div class="orbit" role="region" aria-label="favorite Space pictures" data-orbit>
+    <div class="orbit-wrapper">
+        <div class="orbit-controls">
+            <button class="orbit-previous">orbit-previous Slide </button>
+         </div> 
+         <ul class="orbit-container">
+            <li class="is-active orbit-slide">
+                <figure class="orbit-figure">
+                    <img class="orbit-image">
+                    <figcaption class="orbit-caption">Pozo del Tigre</figcaption>
+                </figure> 
+            </li> 
+            <li class="orbit-slide">
+                <figure class="orbit-figure">
+                    <img class="orbit-image">
+                    <figcaption class="orbit-caption">SAl si pueddes</figcaption>
+                </figure> 
+            </li> 
+        </ul>
+                    
+    </div>
+</div>
+
+<div>
+    <h1>BIEVENIDO AL SISTEMA DE REGISTRO DE EMPLEADOS</h1>
+    <div class="cell large">
+        <div class="callout success">
+            <h5>Registra y controla rempleados</h5>
+        <p>de manera eficaz y confiable, basandose en algoritmos nuevos y más eficiente</p>
+        </div>
+    </div>
+</div>
+
+{%endblock content %}
